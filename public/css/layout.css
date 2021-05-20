@@ -33,11 +33,12 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   /* background: #161415 url(../images/headerimg.jpg) no-repeat top center; */
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   z-index: 10;
 }
 
 /* vertically center banner section */
@@ -54,6 +55,7 @@ header .banner {
    width: 85%;
    padding-bottom: 30px;
    text-align: center;
+   transform: scale(1.2);
 }
 
 header .banner-text { width: 100%; }
@@ -93,6 +95,7 @@ header .social li {
    display: inline-block;
    margin: 0 15px;
    padding: 0;
+   z-index: 10;
 }
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
@@ -116,6 +119,7 @@ header .scrolldown a {
    -moz-transition: all .3s ease-in-out;
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
+   z-index: 20005;
 }
 header .scrolldown a:hover { color: #11ABB0; }
 
@@ -285,6 +289,16 @@ ul#nav li.current a { color: #F06000; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+   display: none;
+ }
+ 
+ /* Hide scrollbar for IE, Edge and Firefox */
+ html {
+   -ms-overflow-style: none;  /* IE and Edge */
+   scrollbar-width: none;  /* Firefox */
+ }
 .bars {
 	width: 95%;
 	float: left;

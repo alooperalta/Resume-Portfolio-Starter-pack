@@ -5713,7 +5713,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('http://demos.creative-tim.com/paper-kit-2/assets/img/antoine-barres.jpg')
   }
   .page-header .filter::after {
     background-color: rgba(0, 0, 0, 0.5);
@@ -5959,8 +5958,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
     height: 43.75em;
     -webkit-animation: cloudLoop 80s linear infinite;
     animation: cloudLoop 80s linear infinite;
-    background-image: url('http://demos.creative-tim.com/paper-kit-2/assets/img/clouds.png'); 
-    pointer-events: none;
   }
   
   @keyframes cloudLoop {
@@ -6048,6 +6045,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
       background-color: #fff;
   /*     position: relative; */
   
+  }
+  .navigation-example{
+      background-image: url('../img/ilya-yakover.jpg');
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      margin-top:0;
   }
   #notifications{
       background-color: #FFFFFF;
@@ -6202,6 +6206,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   }
   .demo-height .motto{
       padding-top: 20% !important;
+  }
+  .demo-header-image{
+      background-image: url('../img/city.jpg');
   }
   .demo-header .motto{
       color: #FFFFFF;
@@ -7108,6 +7115,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
   License - nucleoapp.com/license/
   
   -------------------------------- */
+  @font-face {
+    font-family: 'nucleo-icons';
+    src: url('../fonts/nucleo-icons.eot');
+    src: url('../fonts/nucleo-icons.eot') format('embedded-opentype'), url('../fonts/nucleo-icons.woff2') format('woff2'), url('../fonts/nucleo-icons.woff') format('woff'), url('../fonts/nucleo-icons.ttf') format('truetype'), url('../fonts/nucleo-icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
   /*------------------------
       base class definition
   -------------------------*/
